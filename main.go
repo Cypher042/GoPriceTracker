@@ -30,7 +30,7 @@ func main() {
 	}
 
 
-	// := "https://www.amazon.in/ASUS-15-6-inch-i7-12700H-Battery-FX577ZC-HN192WS/dp/B0CRR4RDP9?pd_rd_w=CxP36"
+	// := "https://www.amazon.in/..."
 	
 
 	scraper.OnRequest(func(r *colly.Request) {
@@ -55,7 +55,7 @@ func main() {
 		log.Println("Error:", err)
 	})
 
-	for i := 0; i < len(URLS); i++ {
+	for (i := 0; i < len(URLS); i++) {
 		
 		err := scraper.Visit(URLS[i])
 		if err != nil {

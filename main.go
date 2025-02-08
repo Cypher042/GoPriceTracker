@@ -19,7 +19,7 @@ func main() {
 	}
 	defer file.Close()
 	scanner := bufio.NewScanner(file)
-
+1``
 
 	for scanner.Scan() {
 		URLS = append(URLS, scanner.Text())

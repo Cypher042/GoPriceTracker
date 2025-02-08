@@ -18,6 +18,12 @@ app.get('/', function(req, res) {
     });
 });
 
+app.get('/about', function(req, res) {
+    res.render('about', {
+        title: 'About Us'
+    });
+});
+
 app.listen(7000, function() {
   console.log('Server started on port 7000');
 });
